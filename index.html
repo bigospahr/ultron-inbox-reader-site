@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Owner-only command inbox access for ULTRON operations.">
+  <meta name="theme-color" content="#101827">
+  <title>ULTRON Inbox Reader — ULTRON Command Center</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="./" aria-label="ULTRON Inbox Reader home">
+      <span class="mark" aria-hidden="true">U</span>
+      <span>ULTRON <span class="wordmark-light">Inbox Reader</span></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> OWNER-OPERATED GOOGLE INBOX</p>
+        <h1 id="hero-title">A narrow path for<br><span>owner-approved requests.</span></h1>
+        <p class="lede">ULTRON Inbox Reader is a personal project operated by Oshea Spahr, separate from Anytime Smart Market LLC. It is designed to read one owner-selected ULTRON command spreadsheet and route narrowly validated requests through existing queue and approval controls.</p>
+        <a class="button" href="privacy.html">How inbox data is handled <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-card" aria-label="Example report fields; illustrative only">
+        <div class="card-top"><span>STATUS REPORT</span><span class="pill">EXAMPLE</span></div>
+        <div class="report-row"><span>Agent services</span><span class="report-value"><i class="mini-dot" aria-hidden="true"></i> Health summary</span></div>
+        <div class="report-row"><span>Task queue</span><span class="report-value">Aggregate counts</span></div>
+        <div class="report-row"><span>Progress</span><span class="report-value">Milestone summary</span></div>
+        <div class="report-row"><span>Errors</span><span class="report-value">Sanitized codes</span></div>
+        <p class="card-foot">Illustration only. No live operational data is shown here.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT IT DOES</p>
+        <h2 id="about-title">Useful status, with narrow access.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature">
+          <span class="feature-number">01</span>
+          <h3>One owner’s inbox</h3>
+          <p>This is a personal operations tool. It is not a public task runner, customer portal, or marketplace service.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-number">02</span>
+          <h3>One selected spreadsheet</h3>
+          <p>The planned poller reads metadata and a CSV export from the owner-selected ULTRON-Command-Inbox spreadsheet. It does not browse the owner’s Drive.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-number">03</span>
+          <h3>No broad Drive browsing</h3>
+          <p>The OAuth scope is <code>drive.file</code>. The staged poller further pins one spreadsheet and uses fixed HTTPS GET requests; the scope itself can permit changes to files authorized to the app.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="notice-section" aria-labelledby="availability-title">
+      <div class="notice-mark" aria-hidden="true">i</div>
+      <div>
+        <h2 id="availability-title">Current availability</h2>
+        <p>The command poller and separate status-report publisher have not been deployed. No live status feed, command processing, or automatic report delivery is active.</p>
+      </div>
+    </section>
+
+    <section class="scope-section" aria-labelledby="scope-title">
+      <p class="eyebrow">GOOGLE DRIVE ACCESS</p>
+      <h2 id="scope-title">A user-authorized, per-file permission.</h2>
+      <p>Google defines <code>drive.file</code> as access to files a user opens or creates with an app, or explicitly makes available to it. This OAuth app is designed to read the selected command spreadsheet through fixed metadata and CSV requests. A separate service-account publisher is planned for status reports; that publisher uses a different credential and is not authorized by this user OAuth consent. The scope itself is not a Google-side guarantee that a token can access only one ID.</p>
+      <a class="text-link" href="privacy.html">Read the privacy policy <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="./"><span class="mark" aria-hidden="true">U</span><span>ULTRON Inbox Reader</span></a>
+    <p>Personal command-inbox access. No live status or command data is displayed on this site.</p>
+    <nav aria-label="Legal">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </footer>
+</body>
+</html>
