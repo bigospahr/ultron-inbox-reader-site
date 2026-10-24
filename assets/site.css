@@ -91,4 +91,3 @@ code { padding: .11rem .3rem; border-radius: .25rem; color: #273e9c; background:
   .legal-main { padding-top: 2.5rem; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-
